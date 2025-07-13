@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Project 3D - Portfolio
 
 <p align="center">
@@ -88,3 +89,6 @@ Specializations:
 <p align="center">
   <img src="https://github.com/omunite215/Project_3DPortfolio/assets/78680563/2fcf609b-e802-4fec-8c82-8f55fd043437" alt="Om's Logo Image"/>
 </p>
+=======
+# My-Personal-Portfolio
+>>>>>>> 393711cde7a8c6676201e3c10493c34a0ca51b1b
