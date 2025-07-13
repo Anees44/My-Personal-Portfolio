@@ -189,9 +189,9 @@ const projects :{
 			},
 		],
 		image: "/projectimg/portfolioimage.png",
-		source_code_link: "https://github.com/omunite215/hoobank",
+		source_code_link: "https://github.com/Anees44/My-Personal-Portfolio",
 		platform: "Vercel",
-		deploy_link: "https://hoobankbyom.netlify.app/",
+		deploy_link: "https://my-personal-portfolio-tan-three.vercel.app/",
 	},
 	{
 		name: "TextUtils Website",
