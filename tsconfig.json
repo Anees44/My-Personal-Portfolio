@@ -34,7 +34,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/components/Navbar.jsx"
-  ],
+, "app/components/Tech.jsx", "app/components/Experience.jsx", "app/components/About.jsx", "app/components/Hero.jsx", "app/components/Contact.jsx", "app/components/HigherOrderComponents/index.js", "app/components/canvas/Stars.jsx", "app/components/canvas/index.js", "app/components/canvas/Earth.jsx", "app/components/canvas/Computers.jsx", "app/components/canvas/Ball.jsx", "app/constants/index.js", "app/constants/index.js", "app/components/Works.jsx", "app/components/Loader.jsx", "app/components/index.js", "app/components/Feedbacks.jsx", "tailwind.config.js", "app/page.jsx", "app/layout.jsx", "app/utils/motion.js"  ],
   "exclude": [
     "node_modules"
   ]

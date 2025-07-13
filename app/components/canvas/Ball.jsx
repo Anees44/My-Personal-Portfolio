@@ -10,7 +10,7 @@ import {
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 
-const Ball = ({ imgUrl }: { imgUrl: string }) => {
+const Ball = ({ imgUrl }) => {
 	const [decal] = useTexture([imgUrl]);
 
 	return (
@@ -36,7 +36,7 @@ const Ball = ({ imgUrl }: { imgUrl: string }) => {
 	);
 };
 
-const BallCanvas = ({ icon }: { icon: string }) => {
+const BallCanvas = ({ icon }) => {
 	return (
 		<Canvas
 			frameloop="demand"

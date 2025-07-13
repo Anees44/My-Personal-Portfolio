@@ -11,11 +11,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-type ExperienceCardProps = {
-  experience: (typeof experiences)[0];
-};
-
-const ExperienceCard = ({ experience }: ExperienceCardProps) => {
+const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       visible={true}

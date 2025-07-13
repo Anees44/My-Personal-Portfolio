@@ -17,7 +17,7 @@ const ResumeButton = () => {
 					src="/resume.svg"
 					width={24}
 					height={24}
-					alt="resume"
+					alt="Anees's Resume"
 					className="object-contain animate-pulse"
 				/>
 				<span className="lg:block hidden text-white">Download Resume</span>

@@ -8,6 +8,14 @@ export const navLinks = [
 		title: "Work",
 	},
 	{
+		id: "tech",
+		title: "Skills",
+	},
+	{
+		id: "Works",
+		title: "Projects",
+	},
+	{
 		id: "contact",
 		title: "Contact",
 	},
@@ -15,19 +23,19 @@ export const navLinks = [
 
 const services = [
 	{
-		title: "UI/UX Designer",
+		title: "Frontend Developer",
 		icon: "/backend.webp",
 	},
 	{
-		title: "Full Stack Web Developer",
+		title: "Responsive Web Designer",
 		icon: "/web.webp",
 	},
 	{
-		title: "App Developer",
+		title: "React/Next.js Specialist",
 		icon: "/mobile.webp",
 	},
 	{
-		title: "Software Engineer",
+		title: "AI-Integrated Web Solutions",
 		icon: "/creator.webp",
 	},
 ];
@@ -58,16 +66,8 @@ const technologies = [
 		icon: "/tech/nextjs.svg",
 	},
 	{
-		name: "Redux Toolkit",
-		icon: "/tech/redux.webp",
-	},
-	{
 		name: "Tailwind CSS",
 		icon: "/tech/tailwind.webp",
-	},
-	{
-		name: "Three JS",
-		icon: "/tech/threejs.webp",
 	},
 	{
 		name: "git",
@@ -78,99 +78,47 @@ const technologies = [
 		icon: "/tech/figma.webp",
 	},
 	{
-		name: "wordpress",
-		icon: "/tech/wordpress.webp",
-	},
-	{
 		name: "bootstrap",
 		icon: "/tech/bootstrap.webp",
+	},
+	{
+		name: "MongoDB",
+		icon: "/tech/mongodb.webp",
 	},
 ];
 
 const experiences = [
 	{
-		title: "Wordpress Developer & UI/UX Designer",
-		company_name: "A.V.M Auto",
+		title: "FrontEnd Developer Intern",
+		company_name: "Eveloper Software House",
 		icon: "/company/avm.webp",
 		iconBg: "#383E56",
-		date: "2020 -  2023",
+		date: "July 2024 – August 2024",
 		points: [
-			"Self-Taught Expertise: Gained proficiency in WordPress and UI/UX design through independent learning.",
-			"Collaborative Design: Worked closely with stakeholders to gather feedback and iterate on the portfolio website's interactivity.",
-			"Successful Website Development: Designed and developed a visually appealing and user-friendly portfolio website using WordPress.",
-			"Positive Business Impact: Contributed to +54.25% sales and overall business growth through the improved website."
+			"Contributed to real client projects as a frontend developer using Next.js, React.js and Tailwind CSS"
 		],
 	},
 	{
-		title: "Next.JS Developer",
-		company_name: "Sparkbright Engineering",
+		title: "FrontEnd Developer Intern",
+		company_name: "Innova Corex (Remote)",
 		icon: "/company/sparkbright.webp",
 		iconBg: "#E6DEDD",
-		date: "2023 - 2024",
+		date: "March 2025 – April 2025",
 		points: [
-			"Self-Taught Expertise: Gained proficiency in React.JS and Next.JS through independent learning.",
-			"Successful Website Development: Designed and developed a visually appealing and user-friendly portfolio website using Next.JS.",
-			"Collaborative Design: Worked closely with stakeholders to gather feedback and iterate on the portfolio website's interactivity."
+			"Completed a remote one-month internship focused on real-world frontend tasks using NEXT.js, React.js and Tailwind CSS. Delivered quality work on time, built responsive UI components, and communicated effectively in a team-oriented virtual environment."
 		],
 	},
 	{
-		title: "Software Developer",
-		company_name: "Way to Web Pvt. Ltd.",
+		title: "ORDER TAKER & IPOS OPERATOR",
+		company_name: "GrillOut Restaurant",
 		icon: "/company/wtw.jpg",
 		iconBg: "#E6DEDD",
-		date: "2024 - Present",
+		date: "January 2024 – Present",
 		points: [
-			"Developing and maintaining Wordpress Site for A.V.M Auto The Car Body Shop based in Ahmedabad, Gujarat India.",
-			"Analyzing feedbacks and fixing bugs.",
-			"Search Engine Optimization.",
-			"Design Maintainence and hosting maintenance.",
+			"Effectively managed customer food orders using the IPOS system, ensuring speed and accuracy. Demonstrated strong communication and coordination with staff, maintained order records, and quickly adapted to digital tools in a fast-paced environment.",
 		],
 	},
 ];
-
-const testimonials = [
-	{
-		id: 1,
-		testimonial:
-			"Behance is a social media platform owned by Adobe whose main focus is to showcase and discover creative work.",
-		name: "Om Patel",
-		image: "/socialmedia/behance.svg",
-		link: "https://www.behance.net/omthecreator",
-	},
-	{
-		id: 2,
-		testimonial:
-			"LinkedIn is a business and employment-focused social media platform that works through websites and mobile apps.",
-		name: "Om Patel",
-		image: "/socialmedia/linkedin.svg",
-		link: "https://www.linkedin.com/in/om-patel-401068143/",
-	},
-	{
-		id: 3,
-		testimonial:
-			"Dribbble is a self-promotion and social networking platform for digital designers and creatives. It serves as a design portfolio.",
-		name: "Om Patel",
-		image: "/socialmedia/dribble.svg",
-		link: "https://dribbble.com/om2121",
-	},
-	{
-		id: 4,
-		testimonial:
-			"Also do check out my UI/UX Portfolio where I have shared by design studies.",
-		name: "Om Patel",
-		image: "/socialmedia/portfolio.svg",
-		link: "https://omthecreator.netlify.app/",
-	},
-	{
-		id: 5,
-		testimonial:
-			"Also do check out my Github Profile where I have shared all my codes from basic to advanced.",
-		name: "Om Patel",
-		image: "/tech/github.webp",
-		link: "https://github.com/omunite215",
-	},
-];
-
 
 const projects :{
 	name: string;
@@ -185,53 +133,54 @@ const projects :{
 	platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web"
 }[] = [
 	{
-		name: "A.V.M Auto Portfolio",
+		name: "Grillout Restaurant Website",
 		description:
-			"A Designed and developed a visually appealing and user-friendly portfolio website using WordPress.",
+			"GrillOut is a modern restaurant website showcasing a diverse menu of burgers, steaks, wraps, and more. Designed with a sleek interface, it offers smooth navigation, optimized images, and an intuitive ordering experience to attract and engage food lovers.",
 		tags: [
 			{
-				name: "wordpress",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "google-translate",
-				color: "green-text-gradient",
-			},
-		],
-		image: "/projectimg/avm.webp",
-		platform: "Wordpress",
-		deploy_link: "https://avmauto.in/",
-	},
-	{
-		name: "Sparkbright Engineering Portfolio",
-		description:
-			" Designed and developed a visually appealing and user-friendly portfolio website using Next.JS.",
-		tags: [
-			{
-				name: "next",
+				name: "Next.js",
 				color: "red-text-gradient",
-			},
-			{
-				name: "Next UI",
-				color: "orange-text-gradient",
 			},
 			{
 				name: "tailwind",
 				color: "blue-text-gradient",
 			},
 		],
-		image: "/projectimg/sparkbright.png",
-		source_code_link: "https://github.com/omunite215/React-Admin-DashBoard",
-		platform: "Web",
-		deploy_link: "https://sparkbright.in/",
+		image: "/projectimg/grilloutresturantimage.png",
+		source_code_link: "https://github.com/Anees44/Grillout-Resturant-Website",
+		platform: "Vercel",
+		deploy_link: "https://grillout-resturant-website-t71v.vercel.app/",
 	},
 	{
-		name: "HooBank",
+		name: "Scrapify – AI-Powered Web Scraper ",
+		description:
+			"Developed a smart web scraping tool that extracts data from dynamic websites, leveraging AI for content summarization and filtering.The tool offers a responsive UI with a dashboard for easy management of scraping tasks. (Under Construction)",
+		tags: [
+			{
+				name: "Next.js",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "tailwind",
+				color: "green-text-gradient",
+			},
+			{
+				name: "MongoDB",
+				color: "green-text-gradient",
+			},
+		],
+		image: "/projectimg/scrapifyimage.png",
+		source_code_link: "/",
+		platform: "Vercel",
+		deploy_link: "/",
+	},
+	{
+		name: "Personal Portfolio Website",
 		description:
 			"A responsive Bank HomePage showcasing different features such as various payment gateways integration, easy money transfer, advanced security, etc. It has a beautiful interface made using Tailwind CSS and React",
 		tags: [
 			{
-				name: "next",
+				name: "Next.js",
 				color: "green-text-gradient",
 			},
 			{
@@ -239,15 +188,15 @@ const projects :{
 				color: "blue-text-gradient",
 			},
 		],
-		image: "/projectimg/hoobank.webp",
+		image: "/projectimg/portfolioimage.png",
 		source_code_link: "https://github.com/omunite215/hoobank",
 		platform: "Vercel",
 		deploy_link: "https://hoobankbyom.netlify.app/",
 	},
 	{
-		name: "MERN Dashboard",
+		name: "TextUtils Website",
 		description:
-			" Designed and developed a visually appealing and user-friendly Data Analytics Dashboard using MERN",
+			"TextUtils Website is a simple and user-friendly React-based tool for quick text editing tasks. It lets users convert text to uppercase or lowercase, remove extra spaces, copy content, and switch between dark and light modes. Perfect for anyone needing fast and efficient text formatting.",
 		tags: [
 			{
 				name: "react",
@@ -266,15 +215,15 @@ const projects :{
 				color: "pink-text-gradient",
 			},
 		],
-		image: "/projectimg/mern.png",
-		source_code_link: "https://github.com/omunite215/Project_MERN-Dashboard",
-		platform: "Web",
-		deploy_link: "https://admin-frontend-r705.onrender.com/",
+		image: "/projectimg/Textutils.png",
+		source_code_link: "https://github.com/Anees44/TextUtils-Website",
+		platform: "Vercel",
+		deploy_link: "https://text-utils-website-wmav.vercel.app/",
 	},
 	{
-		name: "Metaverse Web 3.0",
+		name: "Coming Soon Project",
 		description:
-			"A Modern UI/UX Landing Page using Framer Motion and TailwindCSS with a feel and looks of Web 3.0",
+			"Stay tuned for an exciting project that blends creativity, innovation, and cutting-edge tech. Something big is on its way to redefine the digital experience.",
 		tags: [
 			{
 				name: "react",
@@ -289,15 +238,15 @@ const projects :{
 				color: "orange-text-gradient",
 			},
 		],
-		image: "/projectimg/metaverse.png",
-		source_code_link: "https://github.com/omunite215/Project_Metaverse",
+		image: "/projectimg/comingsoonimg.png",
+		source_code_link: "/",
 		platform: "Vercel",
-		deploy_link: "https://project-metaverse-beta.vercel.app/",
+		deploy_link: "/",
 	},
 	{
-		name: "Issue Tracker",
+		name: "Coming Soon Project",
 		description:
-			"A Next.JS Full Stack Issue Tracker made using Next.Js, ShadCN UI, Prisma, mySQL with latest features like Next.JS Server Components, and Serverless features.",
+			"Stay tuned for an exciting project that blends creativity, innovation, and cutting-edge tech. Something big is on its way to redefine the digital experience.",
 		tags: [
 			{
 				name: "next",
@@ -316,11 +265,11 @@ const projects :{
 				color: "green-text-gradient",
 			},
 		],
-		image: "/projectimg/issuetracker.png",
-		source_code_link: "https://github.com/omunite215/Project_Issue-Tracker",
+		image: "/projectimg/comingsoonimg.png",
+		source_code_link: "/",
 		platform: "Vercel",
-		deploy_link: "https://project-issue-tracker.vercel.app/",
+		deploy_link: "/",
 	},
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

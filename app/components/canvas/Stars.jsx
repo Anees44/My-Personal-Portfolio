@@ -3,13 +3,11 @@ import { PointMaterial, Points, Preload } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as random from "maath/random";
 import { Suspense, useRef, useState } from "react";
-import type { Points as PointProps } from "three";
 
-// biome-ignore lint/suspicious/noExplicitAny: <explanation>
-const Stars = (props: any) => {
-	const ref = useRef<PointProps>(null);
+const Stars = (props) => {
+	const ref = useRef(null);
 	const [sphere] = useState(() =>
-		random.inSphere(new Float32Array(6000), { radius: 1.2 }),
+		random.inSphere(new Float32Array(6000), { radius: 1.2 })
 	);
 
 	useFrame((state, delta) => {
