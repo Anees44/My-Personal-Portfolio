@@ -170,9 +170,9 @@ const projects: {
 				},
 			],
 			image: "/projectimg/scrapifyimage.png",
-			source_code_link: "/",
+			source_code_link: "https://github.com/Anees44/My-Personal-Portfolio.git",
 			platform: "Vercel",
-			deploy_link: "/",
+			deploy_link: "https://scrapify-rho.vercel.app/",
 		},
 		{
 			name: "Personal Portfolio Website",
