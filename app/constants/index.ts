@@ -161,7 +161,7 @@ const projects: {
 					color: "blue-text-gradient",
 				},
 				{
-					name: "tailwnd",
+					name: "tailwind",
 					color: "green-text-gradient",
 				},
 				{
