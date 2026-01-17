@@ -16,7 +16,7 @@ const Hero = () => {
 						Hi, I&apos;m <span className="text-[#915EFF]">Anees</span>
 					</h1>
 					<p className="heroSubText">
-						A Frontend Developer
+						A Web Developer
 					</p>
 				</div>
 			</div>

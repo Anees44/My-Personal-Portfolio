@@ -48,7 +48,11 @@ const About = () => {
 						variants={fadeIn("", "", 0.1, 1)}
 						className="mt-4 text-secondary text-[17px] max-w-[3xl] leading-[30px]"
 					>
-						My name is Anees. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.
+						Hi, I’m Anees, a Software Engineering graduate and currently working as a Full Stack Developer Intern. I enjoy building clean, responsive web interfaces and have hands-on experience with HTML, CSS, JavaScript, React.js, and Next.js.
+
+						I’m a fast learner with a strong interest in Artificial Intelligence, and I have foundational experience in Python and AI concepts through academic and training-based projects. I enjoy exploring new technologies, solving problems, and continuously improving my skills by working on real-world projects.
+
+						I’m always open to opportunities where I can learn, grow, and contribute to meaningful software solutions.
 					</motion.p>
 				</div>
 
@@ -58,7 +62,7 @@ const About = () => {
 				>
 					<div className="relative w-full h-72 rounded-[20px] overflow-hidden">
 						<Image
-							src="/profile.png"
+							src="/my Profile pic.jpg"
 							alt="Anees Profile Picture"
 							fill
 							className="object-cover rounded-[20px]"
