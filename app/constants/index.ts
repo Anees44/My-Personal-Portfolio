@@ -105,7 +105,7 @@ const experiences = [
 		iconBg: "#E6DEDD",
 		date: "Octuber 2025 – Present",
 		points: [
-			"Working as a Full Stack Intern, focusing mainly on frontend development with React.js and Next.js, while learning and assisting with basic backend tasks using Node.js and MongoDB. ",
+			"Working as a MERN Stack Intern, focusing mainly on frontend development with React.js and Next.js, while learning and assisting with basic backend tasks using Node.js and MongoDB. ",
 		],
 	},
 ];
