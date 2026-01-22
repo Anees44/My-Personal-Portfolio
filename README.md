@@ -29,8 +29,8 @@ Welcome to my **personal portfolio website**! This project represents my skills,
 
 ## Features
 
-* Fully responsive design 📱💻
-* Modern and clean UI ✨
+* Fully responsive design 
+* Modern and clean UI 
 * Smooth navigation and animations
 * Projects showcase with details
 * Contact form integration
@@ -68,4 +68,6 @@ This project is open-source and available under the **MIT License**.
 
 ---
 
-> *Built with ❤️ by Anees – MERN Stack Developer*
+## Developed By
+
+- **Anees Ur Rehman**  
