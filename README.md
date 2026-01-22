@@ -40,7 +40,8 @@ Welcome to my **personal portfolio website**! This project represents my skills,
 
 ## Screenshots
 
-*<img width="1317" height="747" alt="portfolioimage" src="https://github.com/user-attachments/assets/2e80216d-caa0-4a2a-be09-e7f9e66a4724" />
+*<img width="963" height="579" alt="portfolioimage" src="https://github.com/user-attachments/assets/0e3470c5-9028-4fbc-a5cd-2835fb2c6788" />
+
 *
 
 ---
@@ -49,8 +50,8 @@ Welcome to my **personal portfolio website**! This project represents my skills,
 
 If you like my work or want to collaborate, feel free to reach out:
 
-* **Email:** [your-email@example.com](mailto:your-email@example.com)
-* **LinkedIn:** [https://linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+* **Email:** [your-email@example.com](mailto:aneesriaz7715@gmail.com)
+* **LinkedIn:** [https://linkedin.com/in/your-profile](https://www.linkedin.com/in/anees-ur-rehman-ba34a9266/)
 * **GitHub:** [https://github.com/Anees44](https://github.com/Anees44)
 
 ---
