@@ -50,8 +50,8 @@ Welcome to my **personal portfolio website**! This project represents my skills,
 
 If you like my work or want to collaborate, feel free to reach out:
 
-* **Email:** [your-email@example.com](mailto:aneesriaz7715@gmail.com)
-* **LinkedIn:** [https://linkedin.com/in/your-profile](https://www.linkedin.com/in/anees-ur-rehman-ba34a9266/)
+* **Email:** [aneesriaz7715@gmail.com](mailto:aneesriaz7715@gmail.com)
+* **LinkedIn:** [https://www.linkedin.com/in/anees-ur-rehman-ba34a9266/](https://www.linkedin.com/in/anees-ur-rehman-ba34a9266/)
 * **GitHub:** [https://github.com/Anees44](https://github.com/Anees44)
 
 ---
