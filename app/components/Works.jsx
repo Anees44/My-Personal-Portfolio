@@ -130,6 +130,8 @@
 
 
 
+
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -154,6 +156,9 @@ const ProjectCard = ({
 	return (
 		<motion.div
 			variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+			initial="hidden"
+			whileInView="show"
+			viewport={{ once: true, amount: 0.25 }}
 			className="w-full sm:w-[360px]"
 		>
 			<Tilt
@@ -162,9 +167,9 @@ const ProjectCard = ({
 					scale: 1,
 					speed: 450,
 				}}
-				className="bg-tertiary p-5 rounded-2xl w-full h-full"
+				className="bg-tertiary p-5 rounded-2xl w-full min-h-[450px] flex flex-col"
 			>
-				<div className="relative w-full h-[230px] rounded-2xl overflow-hidden">
+				<div className="relative w-full h-[200px] sm:h-[230px] rounded-2xl overflow-hidden">
 					<Image
 						src={image}
 						alt={`${name} project`}
@@ -173,19 +178,19 @@ const ProjectCard = ({
 						sizes="(max-width: 640px) 100vw, 360px"
 					/>
 
-					<div className="absolute inset-0 flex justify-end m-3 gap-2 card-img_hover">
+					<div className="absolute inset-0 flex justify-end m-3 gap-2">
 						{source_code_link && (
 							<Link
 								href={source_code_link}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+								className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform"
 							>
 								<Image
 									src="/tech/github.webp"
 									width={24}
 									height={24}
-									alt="source code"
+									alt="GitHub"
 								/>
 							</Link>
 						)}
@@ -195,7 +200,7 @@ const ProjectCard = ({
 								href={deploy_link}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+								className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform"
 							>
 								<Image
 									src={
@@ -211,31 +216,31 @@ const ProjectCard = ({
 									}
 									width={24}
 									height={24}
-									alt={`${platform} deployment`}
+									alt={platform || "Deployment"}
 								/>
 							</Link>
 						)}
 					</div>
 				</div>
 
-				<div className="mt-5">
-					<h3 className="text-white font-bold text-[20px] sm:text-[24px]">
+				<div className="mt-5 flex-1 flex flex-col">
+					<h3 className="text-white font-bold text-[18px] sm:text-[20px] md:text-[24px]">
 						{name}
 					</h3>
-					<p className="mt-2 text-secondary text-[14px] leading-[20px]">
+					<p className="mt-2 text-secondary text-[13px] sm:text-[14px] leading-[18px] sm:leading-[20px] flex-1">
 						{description}
 					</p>
-				</div>
 
-				<div className="mt-4 flex flex-wrap gap-2">
-					{tags.map((tag) => (
-						<p
-							key={`${name}-${tag.name}`}
-							className={`text-[14px] ${tag.color}`}
-						>
-							#{tag.name}
-						</p>
-					))}
+					<div className="mt-4 flex flex-wrap gap-2">
+						{tags.map((tag) => (
+							<p
+								key={`${name}-${tag.name}`}
+								className={`text-[12px] sm:text-[14px] ${tag.color}`}
+							>
+								#{tag.name}
+							</p>
+						))}
+					</div>
 				</div>
 			</Tilt>
 		</motion.div>
@@ -245,7 +250,12 @@ const ProjectCard = ({
 const Works = () => {
 	return (
 		<>
-			<motion.div variants={textVariant()}>
+			<motion.div 
+				variants={textVariant()}
+				initial="hidden"
+				whileInView="show"
+				viewport={{ once: true }}
+			>
 				<p className="sectionSubText">My work</p>
 				<h2 className="sectionHeadText">Projects.</h2>
 			</motion.div>
@@ -253,7 +263,10 @@ const Works = () => {
 			<div className="w-full flex">
 				<motion.p
 					variants={fadeIn("", "", 0.1, 1)}
-					className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+					initial="hidden"
+					whileInView="show"
+					viewport={{ once: true }}
+					className="mt-3 text-secondary text-[15px] sm:text-[17px] max-w-3xl leading-[26px] sm:leading-[30px]"
 				>
 					Following projects showcases my skills and experience through
 					real-world examples of my work. Each project is briefly described with
@@ -263,7 +276,7 @@ const Works = () => {
 				</motion.p>
 			</div>
 
-			<div className="mt-20 flex flex-wrap gap-7 justify-center items-stretch">
+			<div className="mt-12 sm:mt-16 md:mt-20 flex flex-wrap gap-5 sm:gap-7 justify-center items-stretch">
 				{projects.map((project, index) => (
 					<ProjectCard key={`project-${index}`} index={index} {...project} />
 				))}

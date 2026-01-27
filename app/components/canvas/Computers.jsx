@@ -71,6 +71,8 @@
 
 
 
+
+
 "use client";
 import CanvasLoader from "@/app/components/Loader";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
@@ -127,6 +129,7 @@ const ComputersCanvas = () => {
 			dpr={[1, 2]}
 			camera={{ position: [20, 3, 5], fov: 25 }}
 			gl={{ preserveDrawingBuffer: true }}
+			className="w-full h-full"
 		>
 			<Suspense fallback={<CanvasLoader />}>
 				<OrbitControls

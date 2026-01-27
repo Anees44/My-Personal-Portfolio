@@ -32,6 +32,7 @@
   }
 }
 
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -40,10 +41,84 @@
   color-scheme: dark;
 }
 
+body {
+  background-color: #050816;
+  overflow-x: hidden;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
   display: block;
+}
+
+/* Hero Section Mobile Optimization */
+@media (max-width: 640px) {
+  .heroHeadText {
+    font-size: 36px !important;
+    line-height: 1.2 !important;
+  }
+
+  .heroSubText {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    margin-top: 0.5rem !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .heroHeadText {
+    font-size: 28px !important;
+    line-height: 1.1 !important;
+  }
+
+  .heroSubText {
+    font-size: 14px !important;
+  }
+}
+
+/* Ensure z-index stacking for Hero section */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Card Hover Effect */
+.card-img_hover {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Show on hover for desktop */
+@media (min-width: 768px) {
+  .bg-tertiary:hover .card-img_hover {
+    opacity: 1;
+  }
+}
+
+/* Always show on mobile/tablet */
+@media (max-width: 767px) {
+  .card-img_hover {
+    opacity: 1;
+  }
+}
+
+/* Prevent Tilt effect on mobile */
+@media (max-width: 640px) {
+  .tilt-wrapper {
+    transform: none !important;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* Gradient Backgrounds */
@@ -199,4 +274,72 @@
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
+}
+
+/* Responsive Typography */
+@media (max-width: 1024px) {
+  .sectionHeadText {
+    font-size: 50px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionHeadText {
+    font-size: 40px !important;
+  }
+
+  .sectionSubText {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionHeadText {
+    font-size: 30px !important;
+  }
+
+  .sectionSubText {
+    font-size: 14px !important;
+  }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+
+  .padding {
+    padding: 1.5rem 1rem !important;
+  }
+
+  .paddingX {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .paddingY {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+}
+
+/* Smooth Transitions */
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+/* Focus Styles for Accessibility */
+a:focus,
+button:focus {
+  outline: 2px solid #915eff;
+  outline-offset: 2px;
+}
+
+/* Prevent Text Selection on Interactive Elements */
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }

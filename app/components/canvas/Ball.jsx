@@ -1,3 +1,63 @@
+// "use client";
+// import CanvasLoader from "@/app/components/Loader";
+// import {
+// 	Decal,
+// 	Float,
+// 	OrbitControls,
+// 	Preload,
+// 	useTexture,
+// } from "@react-three/drei";
+// import { Canvas } from "@react-three/fiber";
+// import { Suspense } from "react";
+
+// const Ball = ({ imgUrl }) => {
+// 	const [decal] = useTexture([imgUrl]);
+
+// 	return (
+// 		<Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
+// 			<ambientLight intensity={0.25} />
+// 			<directionalLight position={[0, 0, 0.05]} />
+// 			<mesh castShadow receiveShadow scale={2.75}>
+// 				<icosahedronGeometry args={[1, 1]} />
+// 				<meshStandardMaterial
+// 					color="#fff8eb"
+// 					polygonOffset
+// 					polygonOffsetFactor={-5}
+// 					flatShading
+// 				/>
+// 				<Decal
+// 					position={[0, 0, 1]}
+// 					rotation={[2 * Math.PI, 0, 6.25]}
+// 					scale={1}
+// 					map={decal}
+// 				/>
+// 			</mesh>
+// 		</Float>
+// 	);
+// };
+
+// const BallCanvas = ({ icon }) => {
+// 	return (
+// 		<Canvas
+// 			frameloop="demand"
+// 			dpr={[1, 2]}
+// 			gl={{ preserveDrawingBuffer: true }}
+// 		>
+// 			<Suspense fallback={<CanvasLoader />}>
+// 				<OrbitControls enableZoom={false} />
+// 				<Ball imgUrl={icon} />
+// 			</Suspense>
+
+// 			<Preload all />
+// 		</Canvas>
+// 	);
+// };
+
+// export default BallCanvas;
+
+
+
+
 "use client";
 import CanvasLoader from "@/app/components/Loader";
 import {
@@ -15,10 +75,10 @@ const Ball = ({ imgUrl }) => {
 
 	return (
 		<Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-			<ambientLight intensity={0.25} />
-			<directionalLight position={[0, 0, 0.05]} />
+			<ambientLight intensity={0.35} />
+			<directionalLight position={[0, 0, 0.05]} intensity={0.5} />
 			<mesh castShadow receiveShadow scale={2.75}>
-				<icosahedronGeometry args={[1, 1]} />
+				<icosahedronGeometry args={[1, 2]} />
 				<meshStandardMaterial
 					color="#fff8eb"
 					polygonOffset
@@ -30,6 +90,7 @@ const Ball = ({ imgUrl }) => {
 					rotation={[2 * Math.PI, 0, 6.25]}
 					scale={1}
 					map={decal}
+					flatShading
 				/>
 			</mesh>
 		</Float>
@@ -41,10 +102,19 @@ const BallCanvas = ({ icon }) => {
 		<Canvas
 			frameloop="demand"
 			dpr={[1, 2]}
-			gl={{ preserveDrawingBuffer: true }}
+			camera={{ position: [0, 0, 5], fov: 25 }}
+			gl={{ 
+				preserveDrawingBuffer: true,
+				antialias: true,
+				alpha: true,
+			}}
 		>
 			<Suspense fallback={<CanvasLoader />}>
-				<OrbitControls enableZoom={false} />
+				<OrbitControls 
+					enableZoom={false}
+					autoRotate
+					autoRotateSpeed={2}
+				/>
 				<Ball imgUrl={icon} />
 			</Suspense>
 
