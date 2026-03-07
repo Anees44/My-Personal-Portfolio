@@ -228,6 +228,33 @@ const projects: {
 			deploy_link: "https://todo-list-app-silk-sigma.vercel.app/",
 		},
 		{
+			name: "Faith Bond Website",
+			description:
+				"A modern Muslim matrimonial web application built with React.js, React Router, and Tailwind CSS. The platform includes multiple pages such as Home, Login, Register, Testimonials, Contact, and Dashboard. It features a responsive design",
+			tags: [
+				{
+					name: "React.js",
+					color: "blue-text-gradient",
+				},
+				{
+					name: "tailwind",
+					color: "green-text-gradient",
+				},
+				{
+					name: "shadCN",
+					color: "orange-text-gradient",
+				},
+				{
+					name: "mongodb",
+					color: "green-text-gradient",
+				},
+			],
+			image: "/projectimg/marriageImg.PNG",
+			source_code_link: "/",
+			platform: "Vercel",
+			deploy_link: "https://trae-dating-project.vercel.app/",
+		},
+		{
 			name: "Live Weather Check",
 			description:
 				"A simple and responsive Weather Application built using HTML, CSS, and JavaScript. This website allows users to search for any city and get real-time weather information such as temperature, weather conditions, humidity, and wind speed.",
@@ -249,33 +276,6 @@ const projects: {
 			source_code_link: "https://github.com/Anees44/Weather-App-Website.git",
 			platform: "Vercel",
 			deploy_link: "https://weather-app-website-beta.vercel.app/",
-		},
-		{
-			name: "Coming Soon Project",
-			description:
-				"Stay tuned for an exciting project that blends creativity, innovation, and cutting-edge tech. Something big is on its way to redefine the digital experience.",
-			tags: [
-				{
-					name: "next",
-					color: "blue-text-gradient",
-				},
-				{
-					name: "tailwind",
-					color: "green-text-gradient",
-				},
-				{
-					name: "shadCN",
-					color: "orange-text-gradient",
-				},
-				{
-					name: "mySQL",
-					color: "green-text-gradient",
-				},
-			],
-			image: "/projectimg/comingsoonimg.png",
-			source_code_link: "/",
-			platform: "Vercel",
-			deploy_link: "/",
 		},
 		{
 			name: "Coming Soon Project",
