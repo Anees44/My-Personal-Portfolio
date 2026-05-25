@@ -123,6 +123,33 @@ const projects: {
 	platform: "Netlify" | "Vercel" | "Figma" | "Wordpress" | "Web"
 }[] = [
 		{
+			name: "OfficeSphere - Office Management System",
+			description:
+				"Stay tuned for an exciting project that blends creativity, innovation, and cutting-edge tech. Something big is on its way to redefine the digital experience.",
+			tags: [
+				{
+					name: "react",
+					color: "blue-text-gradient",
+				},
+				{
+					name: "CSS",
+					color: "green-text-gradient",
+				},
+				{
+					name: "JavaScript",
+					color: "orange-text-gradient",
+				},
+				{
+					name: "MongoDB",
+					color: "green-text-gradient",
+				},
+			],
+			image: "/projectimg/comingsoonimg.png",
+			source_code_link: "/",
+			platform: "Vercel",
+			deploy_link: "/",
+		},
+		{
 			name: "Grillout Restaurant Website",
 			description:
 				"GrillOut is a modern restaurant website showcasing a diverse menu of burgers, steaks, wraps, and more. Designed with a sleek interface, it offers smooth navigation, optimized images, and an intuitive ordering experience to attract and engage food lovers.",
@@ -276,33 +303,6 @@ const projects: {
 			source_code_link: "https://github.com/Anees44/Weather-App-Website.git",
 			platform: "Vercel",
 			deploy_link: "https://weather-app-website-beta.vercel.app/",
-		},
-		{
-			name: "Coming Soon Project",
-			description:
-				"Stay tuned for an exciting project that blends creativity, innovation, and cutting-edge tech. Something big is on its way to redefine the digital experience.",
-			tags: [
-				{
-					name: "next",
-					color: "blue-text-gradient",
-				},
-				{
-					name: "tailwind",
-					color: "green-text-gradient",
-				},
-				{
-					name: "shadCN",
-					color: "orange-text-gradient",
-				},
-				{
-					name: "mySQL",
-					color: "green-text-gradient",
-				},
-			],
-			image: "/projectimg/comingsoonimg.png",
-			source_code_link: "/",
-			platform: "Vercel",
-			deploy_link: "/",
 		},
 		{
 			name: "Coming Soon Project",
