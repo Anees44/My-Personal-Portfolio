@@ -125,7 +125,7 @@ const projects: {
 		{
 			name: "OfficeSphere - Office Management System",
 			description:
-				"Stay tuned for an exciting project that blends creativity, innovation, and cutting-edge tech. Something big is on its way to redefine the digital experience.",
+				"Built a MERN-stack office management platform with real-time communication, project management, task tracking, and workflow automation for team productivity.",
 			tags: [
 				{
 					name: "react",
@@ -144,10 +144,10 @@ const projects: {
 					color: "green-text-gradient",
 				},
 			],
-			image: "/projectimg/comingsoonimg.png",
+			image: "/projectimg/officesphere.png",
 			source_code_link: "/",
 			platform: "Vercel",
-			deploy_link: "/",
+			deploy_link: "https://office-sphere-frontend.vercel.app/",
 		},
 		{
 			name: "Grillout Restaurant Website",
